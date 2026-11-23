@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Singnote 개인정보처리방침</title>
+<style>
+  :root { --fg: #1a1b21; --muted: #5b5e6a; --accent: #0047ab; --bg: #ffffff; --line: #e3e5ec; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e6e7ee; --muted: #a6a9b6; --accent: #8fb3ff; --bg: #121318; --line: #2b2d36; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 -apple-system, "Pretendard", "Noto Sans KR", sans-serif; word-break: keep-all; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 36px 0 8px; color: var(--accent); }
+  p, li { color: var(--fg); }
+  .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+  ul { padding-left: 20px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0 24px; }
+  a { color: var(--accent); }
+  .en { color: var(--muted); font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Singnote 개인정보처리방침</h1>
+  <p class="meta">시행일: 2026년 11월 24일</p>
+
+  <p>Singnote(이하 "앱")는 할 일, 캘린더, 손글씨 노트를 한곳에서 쓰기 위한 개인용 Android 앱입니다. 앱은 별도의 서버를 운영하지 않으며, 사용자의 정보를 개발자에게 전송하거나 수집하지 않습니다.</p>
+
+  <h2>1. 처리하는 정보와 목적</h2>
+  <ul>
+    <li><strong>Google Tasks</strong> — 사용자가 설정에서 Google 계정을 연결하면, <code>https://www.googleapis.com/auth/tasks</code> 권한으로 기본 할 일 목록을 읽고 씁니다. 앱과 Google Tasks 사이의 할 일 동기화에만 사용합니다.</li>
+    <li><strong>캘린더</strong> — 기기의 캘린더 권한(읽기·쓰기)으로 기기에 등록된 캘린더의 일정을 보여 주고, 사용자가 만든 일정을 저장합니다. 일정은 Android 캘린더를 통해서만 처리되며 앱이 따로 외부로 보내지 않습니다.</li>
+    <li><strong>손글씨 노트</strong> — 노트와 필기 데이터는 기기 안에만 저장됩니다.</li>
+    <li><strong>손글씨 인식</strong> — Google ML Kit의 온디바이스 인식을 사용하며, 인식은 기기 안에서 이루어집니다. 처음 한 번 인식 모델을 내려받을 때만 네트워크를 사용합니다.</li>
+  </ul>
+
+  <h2>2. 제3자 제공 및 광고·분석</h2>
+  <p>앱은 사용자 정보를 제3자에게 판매하거나 제공하지 않습니다. 광고, 분석 도구, 추적 기술을 사용하지 않습니다. Google 사용자 데이터는 위 기능을 제공하는 용도로만 쓰이며, Google API 서비스 사용자 데이터 정책(제한적 사용 요건 포함)을 따릅니다.</p>
+
+  <h2>3. 보관과 삭제</h2>
+  <ul>
+    <li>앱 데이터는 기기에 저장되며, Android 기본 백업 설정에 따라 사용자의 Google 계정 백업에 포함될 수 있습니다.</li>
+    <li>앱을 삭제하면 기기에 저장된 앱 데이터가 함께 삭제됩니다.</li>
+    <li>Google 계정 연결은 앱 설정에서 해제하거나, <a href="https://myaccount.google.com/permissions">Google 계정 권한 페이지</a>에서 언제든 철회할 수 있습니다.</li>
+  </ul>
+
+  <h2>4. 문의</h2>
+  <p>이 방침에 관한 문의는 <a href="https://github.com/pkeony/singnote-privacy/issues">GitHub 이슈</a>로 남겨 주세요.</p>
+
+  <h2>5. 변경</h2>
+  <p>방침이 바뀌면 이 페이지에 시행일과 함께 게시합니다.</p>
+
+  <hr>
+  <section class="en" lang="en">
+    <h2>Summary (English)</h2>
+    <p>Singnote is a personal Android app for tasks, calendar, and handwritten notes. It has no server and does not collect any data. With the user's consent it uses the Google Tasks scope (<code>auth/tasks</code>) solely to sync tasks, and the device calendar permission to show and save events. Notes stay on the device, and handwriting recognition runs on-device via Google ML Kit. No data is sold or shared, and no ads or analytics are used. Use of Google user data complies with the Google API Services User Data Policy, including the Limited Use requirements. Access can be revoked at any time from the app settings or <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</p>
+  </section>
+</main>
+</body>
+</html>
